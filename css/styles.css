@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+}
+
 /* Basic styles for the whole website */
 body {
     background-color: #f7f3e8;
@@ -44,3 +48,31 @@ a:hover {
     padding: 10px;
     margin: 16px 0;
 }
+
+/* Reusable class */
+.feature {
+    background-color: #e3ebd5;
+    border: 2px solid #41644a;
+    padding: 16px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Unique page section */
+#main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Descendant selector */
+nav a {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* More specific styling */
+main p {
+    color: #3d3a2e;
+}
+
