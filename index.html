@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stardew Valley</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -12,19 +13,23 @@
     <header>
         <h1>Welcome to Stardew Valley</h1>
 
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About Stardew Valley</a>
             <a href="resources.html">Resources</a>
         </nav>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" class="content-container">
+
         <section class="feature">
             <h2>About the Game</h2>
 
             <p>
-                Stardew Valley is a farming simulation game where players move to a small town and start a new life. Players can grow crops, take care of animals, explore caves, fish, and build relationships with the people in the town.
+                Stardew Valley is a farming simulation game where players
+                move to a small town and start a new life. Players can
+                grow crops, take care of animals, explore caves, fish,
+                and build relationships with the people in the town.
             </p>
         </section>
 
@@ -32,15 +37,65 @@
             Welcome to the valley! There is always something new to discover.
         </p>
 
-        <img src="images/pelican.town.png"
-             alt="Map of Pelican Town in Stardew Valley">
+        <img
+            src="images/pelican.town.png"
+            alt="Map of Pelican Town in Stardew Valley"
+            class="responsive-image"
+        >
+
+        <section class="reflection">
+            <h2>Responsive Design Reflection</h2>
+
+            <ol>
+                <li>
+                    The most significant layout issue I discovered was
+                    that the page needed a flexible content area and images
+                    that could fit smaller screens. Without responsive
+                    rules, content can feel crowded or extend beyond the screen.
+                </li>
+
+                <li>
+                    I used a centered container with a maximum width,
+                    flexible width, and consistent box sizing. I also used
+                    margin and padding to separate sections, and set images
+                    to a maximum width of 100% with automatic height so
+                    their proportions stay correct.
+                </li>
+
+                <li>
+                    At a wide viewport, the content has more space and
+                    the navigation links can sit in one row. At a narrow
+                    viewport, the media query reduces spacing and lets
+                    the navigation links wrap, making the page easier
+                    to use on a phone.
+                </li>
+
+                <li>
+                    Testing at different widths helped me notice that
+                    a layout can look fine on a computer but feel cramped
+                    on a phone. It also reminded me to check that images
+                    stay inside the content area and that text wraps
+                    naturally without horizontal scrolling.
+                </li>
+
+                <li>
+                    Next, I would improve the design by testing more
+                    devices and making the navigation even easier to
+                    use with touch controls.
+                </li>
+            </ol>
+        </section>
+
     </main>
 
     <footer>
         <p>Stardew Valley Website Project</p>
+
         <p>
-            Visit my
-            <a href="https://github.com/Avaleri7">GitHub profile</a>
+            Visit the
+            <a href="https://github.com/Avaleri7/stardew-valley-website">
+                GitHub repository
+            </a>.
         </p>
     </footer>
 
